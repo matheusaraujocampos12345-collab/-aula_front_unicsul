@@ -144,19 +144,75 @@ blockquote {
     border-radius: 4px;
 }
 
+#inicio article h2 {
+    margin-bottom: 16px;
+}
+
 #escolhas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    align-items: start;
 }
 
-#escolhas header { grid-column: 1 / -1; }
+#escolhas header { 
+    grid-column: 1 / -1; 
+    text-align: center;
+}
+
+#escolhas article img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+#escolhas figcaption {
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a55a49;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#escolhas h3 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #3e2723;
+}
+
+#escolhas a {
+    color: #3e2723;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#escolhas a:hover {
+    color: #a55a49;
+}
 
 #dicas-home {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 32px;
     align-items: start;
+}
+
+#dicas-home a {
+    color: #3e2723;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#dicas-home a:hover {
+    color: #a55a49;
 }
 
 aside {
@@ -166,10 +222,25 @@ aside {
     border-left: 4px solid #a55a49;
 }
 
+aside h3 {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #3e2723;
+}
+
+#newsletter {
+    text-align: center;
+}
+
 #newsletter form {
     display: flex;
     gap: 16px;
     align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], select, textarea {
@@ -198,6 +269,8 @@ legend {
     color: #a55a49;
     font-size: 14px;
     padding: 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 label { font-size: 15px; font-weight: bold; }
@@ -229,6 +302,13 @@ label { font-size: 15px; font-weight: bold; }
     padding: 16px;
     background-color: #ffffff;
     border-radius: 4px;
+}
+
+.video-card-horizontal h2 {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .video-card-horizontal iframe {
